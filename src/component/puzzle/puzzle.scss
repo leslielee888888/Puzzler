@@ -1,0 +1,19 @@
+@for $row from 1 through 3 {
+    @for $column from 1 through 3 {
+        .puzzle-#{$row}-#{$column} {
+            background-position: ($column - 1) * 50% ($row - 1) * 50% !important;
+        }
+    }
+}
+
+.puzzle {
+    width: 33.33%;
+    height: 33.33%;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    float: left;
+    background: url('../../assets/isentia.jpg') no-repeat;
+}
+
+@mixin background-position($index) {}
